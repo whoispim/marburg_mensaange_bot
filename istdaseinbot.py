@@ -53,6 +53,7 @@ def essen_fassen(): #fetches menu through oneliner.sh, seperates it and examines
             out = out + "💔 " + gericht + "\n"
         else:
             out = out + "💚 " + gericht + "\n"
+    out = re.sub(r'Austernpilze','Austernpilze😥',out)
     return out 
 
 start_handler = CommandHandler('start', start)
