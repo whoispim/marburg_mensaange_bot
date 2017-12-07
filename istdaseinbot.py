@@ -46,7 +46,7 @@ def essen_fassen(): #fetches menu through oneliner.sh, seperates it and examines
 
     rare = rare[:-1]
 
-    boese = ['12','13','17','18','19','22','29','rind','pute','huhn','hähn','geflügel','chicken']
+    boese = ['12','13','17','18','19','22','29','rind','pute','huhn','hähn','geflügel','chicken','truthahn']
 
     for gericht in rare:
         if any (x in gericht.lower() for x in boese):
